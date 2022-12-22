@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+a {
+  color: rgb(7, 5, 0);
+  text-decoration: none;
+}
+
+.header h1,
+.header {
+  text-align: center;
+}
+
+.fixed-top,
+.header {
+  position: auto;
+}
+
+/* Books */
+.book {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  display: flex;
+}
+.book img {
+  align-self: center;
+}
+.book,
+.page,
+.list {
+  padding: 5px 10px;
+}
+.book div {
+  padding-left: 10px;
+}
+.book h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.book .author {
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+.book .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.book .text {
+  width: 100%;
+}
+.previous,
+.next,
+.book .add-button,
+.searchBar input[type="submit"] {
+  padding: 8px 10px;
+  border: 0px;
+  border-radius: 5px;
+  min-width: 80px;
+  color: #fff;
+  float: right;
+  font-size: 1.1em;
+  transition: background-color 0.5s ease;
+}
+.book .add-button {
+  background-color: #91228b;
+}
+.searchBar input[type="submit"]:hover,
+.book .add-button:hover {
+  background-color: rgb(92, 157, 253);
+}
+
+/* .previous,
+.next {
+  background-color: rgb(255, 166, 0);
+  color: #000;
+}
+.previous:hover,
+.next:hover {
+  background-color: rgb(255, 200, 1);
+} */
+
+/* .previous:disabled,
+.next:disabled, */
+.book .add-button:disabled {
+  background-color: rgb(197 197 197);
+  color: #919191;
+  font-weight: normal;
+}
+.book .remove-button {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #bd1515;
+  border: 10px;
+  border-radius: 5px;
+  float: right;
+}
+.remove-button:hover {
+  background-color: rgb(92, 157, 253);
+}
+
+.searchBar {
+  text-align: center;
+}
+
+.searchBarAbout {
+  text-align: middle;
+}
+
+.searchBar form {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.searchBar input[type="text"] {
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 1.3em;
+  border: 2px solid #3c2929;
+  width: 80%;
+  margin-right: 5px;
+}
+
+.searchBar input[type="submit"] {
+  background-color: rgb(10, 21, 12);
+  width: 15%;
+  margin-right: 5px;
+}
+
+.basket,
+.pages {
+  text-align: center;
+}
+.pages button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pages div {
+  display: inline-block;
+  vertical-align: center;
+  width: 33%;
+}
+.pages div:first-child button {
+  float: left;
+}
+
+.emptybasket {
+  text-align: center;
+  background-color: #bc58e4;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 70px auto;
+  max-width: 700px;
+}
+
+.aboutstyle {
+  text-align: center;
+  background-color: #f5eff2;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 70px auto;
+  max-width: 700px;
+}
+
+.about {
+  text-align: center;
+}
+
+.searchButton {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #91228b;
+  border: 10px;
+  border-radius: 5px;
+  float: center;
+}
+
+.searchButton:hover {
+  background-color: rgb(92, 157, 253);
+}
+
+/* .homelink {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #91228b;
+  border: 10px;
+  border-radius: 5px;
+  float: center;
+}
+
+.aboutlink {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #91228b;
+  border: 10px;
+  border-radius: 5px;
+  float: center;
+}
+
+.bookcaselink {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #91228b;
+  border: 10px;
+  border-radius: 5px;
+  float: center;
+} */
+
+/* .homelink:hover,
+.aboutlink:hover,
+.bookcaselink:hover {
+  background-color: rgb(92, 157, 253);
+} */
+
+.navigation {
+  background-color: none;
+  padding: 16px 32px;
+}
+
+.navigation a.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
